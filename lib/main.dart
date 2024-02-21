@@ -17,7 +17,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
         home: DecoratedBox (
           decoration: BoxDecoration(image: DecorationImage(
-            image: 
+            fit: BoxFit.cover,
+            image: AssetImage('images/cardiograma.png')
           )),
     child: Row(
         children: [
