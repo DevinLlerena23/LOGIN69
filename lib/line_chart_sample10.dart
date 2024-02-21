@@ -41,9 +41,9 @@ class _LineChartSample10State extends State<LineChartSample10> {
         cosPoints.removeAt(0);
       }
       setState(() {
-        sinPoints.add(FlSpot(xValue, isRandom ? math.Random().nextDouble() :  0.02));
+        sinPoints.add(FlSpot(xValue, isRandom ? math.Random().nextDouble() :  0.05));
       
-        cosPoints.add(FlSpot(xValue, isRandom ? math.Random().nextDouble() :  0.02));
+        cosPoints.add(FlSpot(xValue, isRandom ? math.Random().nextDouble() :  0.05));
       });
 
       xValue += step;
