@@ -4,6 +4,7 @@ import 'package:login3/bar_chart_sample1.dart';
 import 'package:login3/line_chart_sample10.dart';
 import 'package:login3/line_chart_sample2.dart';
 import 'package:login3/line_chart_sample9.dart';
+import 'package:login3/login.dart';
 
 void main() {
   runApp(MainApp());
@@ -15,29 +16,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: DecoratedBox (
-          decoration: BoxDecoration(image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage('images/cardiograma.png')
-          )),
-    child: Row(
-        children: [
-          Padding(padding: EdgeInsets.only(left: 100)),
-          SizedBox(
-            child: LineChartSample10(),
-            height: 600,
-            width: 600,
-          ),
-          Padding(padding: EdgeInsets.only(left: 500)),
-          SizedBox(
-            child: BarChartSample1(),
-            height: 600,
-            width: 600,
-          )
-        ],
-      ),
-    ) 
-      
+        home: LoginPage()
     );
   }
 }

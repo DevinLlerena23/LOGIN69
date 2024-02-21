@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:login3/line_chart_sample10.dart';
+import 'package:login3/xdxd.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -88,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                     String contrasena = _contrasenaController.text;
 
                     if (usuario.isNotEmpty && contrasena.isNotEmpty){
-                      final route = MaterialPageRoute(builder: (context) => LineChartSample10());
+                      final route = MaterialPageRoute(builder: (context) => Wid());
                       Navigator.push(context, route);
                     } else{
                       showDialog(
